@@ -1,9 +1,9 @@
 # EX 04 MULTIVARIATE ANALYSIS
-### Aim:
+## Aim:
 To perform Multivariate EDA on the given data set.
-### Explanation:
+## Explanation:
 Exploratory data analysis is used to understand the messages within a dataset. This technique involves many iterative processes to ensure that the cleaned data is further sorted to better understand the useful meaning.The primary aim with exploratory analysis is to examine the data for distribution, outliers and anomalies to direct specific testing of your hypothesis.
-### Algorithm:
+## Algorithm:
 - Step1: Import the built libraries required to perform EDA and outlier removal.
 - Step2: Read the given csv file.
 - Step3: Convert the file into a dataframe and get information of the data.
@@ -13,8 +13,8 @@ Exploratory data analysis is used to understand the messages within a dataset. T
 Developed By: 212222230167  
 Register Number: Vasanthamukilan M
 ```
-### Program:
-- SuperStore.csv
+## Program:
+- ### SuperStore.csv
 ```Python
 import pandas as pd
 import seaborn as sns
@@ -34,8 +34,8 @@ plt.xticks(rotation=90)
 sns.heatmap(df.corr(),annot=True)
 sns.displot(df,x='Region',hue="Category")
 ```
-- Output: (SuperStorE.csv)
-- 
+- #### Output: (SuperStorE.csv)
+
 ![4_1](https://github.com/Vasanthamukilan/ODD2023-Datascience-Ex-04/assets/119559694/ce5d0568-0e16-4e29-ba56-5651f31d3128)
 
 ![4_2](https://github.com/Vasanthamukilan/ODD2023-Datascience-Ex-04/assets/119559694/1d5dd5a2-1a62-46b2-8cc5-4e0a16118e30)
@@ -53,7 +53,7 @@ sns.displot(df,x='Region',hue="Category")
 ![4_8](https://github.com/Vasanthamukilan/ODD2023-Datascience-Ex-04/assets/119559694/808bb94a-a06c-4606-beaf-5a966ad13022)
 
 
-- Diabetes.csv
+- ### Diabetes.csv
 ```Python
 import pandas as pd
 import seaborn as sns
@@ -94,7 +94,7 @@ sns.displot(df, x="Glucose", hue="Outcome")
 df.corr()
 sns.heatmap(df.corr(),annot=True)
 ```
-- Output (Diabetes.csv):
+- #### Output (Diabetes.csv):
 
 ![Screenshot 2023-10-14 000109](https://github.com/Vasanthamukilan/ODD2023-Datascience-Ex-04/assets/119559694/356586f6-3c77-42ad-891b-e0ed2d0b2428)
 
@@ -112,7 +112,5 @@ sns.heatmap(df.corr(),annot=True)
 
 ![4_15](https://github.com/Vasanthamukilan/ODD2023-Datascience-Ex-04/assets/119559694/dc9e09d2-e33b-4b43-81e8-d42c4042d65c)
 
-
-
-### RESULT:
+## RESULT:
 Thus we have read the given data and performed the multivariate analysis with different types of plots.
