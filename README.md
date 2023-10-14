@@ -65,23 +65,23 @@ df.isnull().sum()
 # REMOVING OUTLIER
 z = np.abs(stats.zscore(df['Glucose']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['BloodPressure']))
+z = np.abs(stats.zscore(df['BloodPressure']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['SkinThickness']))
+z = np.abs(stats.zscore(df['SkinThickness']))
 df=df[(z<3)]
-z = np.abs(stats.zscore(dfc['BMI']))
+z = np.abs(stats.zscore(df['BMI']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['Insulin']))
+z = np.abs(stats.zscore(df['Insulin']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['DiabetesPedigreeFunction']))
+z = np.abs(stats.zscore(df['DiabetesPedigreeFunction']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['Age']))
+z = np.abs(stats.zscore(df['Age']))
 df=df[(z<2)]
-z = np.abs(stats.zscore(dfc['Outcome']))
+z = np.abs(stats.zscore(df['Outcome']))
 df=df[(z<3)]
-sns.boxplot(data=dfc)
+sns.boxplot(data=df)
 plt.xticks(rotation=90)
-sns.boxplot(data=dfc)
+sns.boxplot(data=df)
 plt.xticks(rotation=90)
 sns.scatterplot(x=df['Glucose'], y=df['BloodPressure'], hue=df['Outcome'])
 Age=df.loc[:,["Age","BMI"]]
